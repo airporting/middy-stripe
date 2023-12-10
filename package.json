@@ -7,7 +7,7 @@
   "packageManager": "yarn@4.0.2",
   "type": "module",
   "engines": {
-    "node": "18.18.2"
+    "node": "18.19.0"
   },
   "scripts": {
     "commit": "cz",
