@@ -18,6 +18,10 @@
   },
   "packageRules": [
     {
+      "packageNames": ["node"],
+      "enabled": false
+    },
+    {
       "matchManagers": ["nvm"],
       "enabled": false
     },
