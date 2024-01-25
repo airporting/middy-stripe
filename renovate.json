@@ -29,7 +29,6 @@
     },
     {
       "matchPackagePatterns": [
-        "@airporting/*",
         "@ngneat/falso",
         "algoliasearch",
         "aws*sdk*",
