@@ -1,6 +1,6 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 ![Static Badge](https://img.shields.io/badge/coverage-100-brightgreen)
-![Static Badge](https://img.shields.io/badge/release-1.0.1-blue)
+![Static Badge](https://img.shields.io/badge/release-1.0.2-blue)
 [![test](https://github.com/airporting/middy-stripe/actions/workflows/test.yml/badge.svg)](https://github.com/airporting/middy-stripe/actions/workflows/test.yml)
 
 Used by [Airporting](https://www.airporting.com)
@@ -35,6 +35,7 @@ At Airporting, we apply some common good practices (hope you too). Mainly, we DR
 ### Don't Repeat Yourself
 
 Numerous of our endpoints need the use of stripe client. Instead of repeating this in all our handlers files:
+
 ```javascript
 import Stripe from 'stripe';
 
@@ -42,15 +43,16 @@ const stripe = new Stripe(apiKey);
 
 // ...code
 ```
+
 We prefer to use a middleware dedicated. Our serverless entrypoints, which references all the handlers are generated, so it's easy to generate a call to a middleware usage instead of repeating ourselves again and again.
 
 ### SOLID
 
-***S*** stands for *Single responsibility*. Our business code doesn't need to know how to get the Stripe client instance. It just need this instance ready to use.
+**_S_** stands for _Single responsibility_. Our business code doesn't need to know how to get the Stripe client instance. It just need this instance ready to use.
 
 ### Continuous updates
 
-As you can see in our files structure, we strongly use renovate to be always up-to-date. It's true for our public and private dependencies and, of course, for all our reporsitories. If we upgrade this middleware with some helpers (for example), if we fix something, we will just let Renovate upgrade everything for us. If we don't use this middleware, we would have to update each repo by our hands. Boring. 
+As you can see in our files structure, we strongly use renovate to be always up-to-date. It's true for our public and private dependencies and, of course, for all our reporsitories. If we upgrade this middleware with some helpers (for example), if we fix something, we will just let Renovate upgrade everything for us. If we don't use this middleware, we would have to update each repo by our hands. Boring.
 
 ### Testing, dependency injection
 
