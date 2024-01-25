@@ -3,7 +3,6 @@
 . "$(dirname "$0")/_/husky.sh"
 
 yarn prettier:write
-yarn prepare
 git add ./.editorconfig
 git add ./.eslintrc.yml
 git add ./.gitattributes
@@ -22,9 +21,6 @@ git add ./.yarn/
 git add ./.yarnrc.yml
 git add ./commitlint.config.js
 git add ./jest.config.js
-git add ./package.json
 git add ./README.md
 git add ./renovate.json
-git add ./yarn.lock
-yarn lint-staged
 yarn lint

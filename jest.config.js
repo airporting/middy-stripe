@@ -13,4 +13,11 @@ export default {
   bail: true,
   testMatch: ['**/index.test.js'],
   testPathIgnorePatterns: ['/node_modules/', 'src/assets/handlers/'],
+  coverageThreshold: {
+    global: {
+      branches: 75,
+      functions: 75,
+      lines: 75,
+    },
+  },
 };
