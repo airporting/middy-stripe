@@ -3,6 +3,12 @@
 ![Static Badge](https://img.shields.io/badge/release-1.0.1-blue)
 [![test](https://github.com/airporting/middy-stripe/actions/workflows/test.yml/badge.svg)](https://github.com/airporting/middy-stripe/actions/workflows/test.yml)
 
+Used by [Airporting](https://www.airporting.com)
+
+NodeJs 18.x or newer only.
+
+[![Linkedin](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/company/airporting)
+
 # middy-stripe
 
 Automatically injects Stripe client into lambda context.
