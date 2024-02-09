@@ -15,7 +15,7 @@ Automatically injects Stripe client into lambda context.
 
 ```javascript
 import middy from '@middy/core';
-import httpJsonBodyParserMiddleware from '@airporting/middy-stripe';
+import stripeMiddleware from '@airporting/middy-stripe';
 
 middy(yourHandler).use(stripeMiddleware({ apiKey: 'YOUR_API_KEY' }));
 ```
