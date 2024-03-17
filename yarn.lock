@@ -33,7 +33,7 @@ __metadata:
     jest: "npm:29.7.0"
     lint-staged: "npm:15.2.2"
     prettier: "npm:3.2.5"
-    stripe: "npm:14.20.0"
+    stripe: "npm:14.21.0"
   languageName: unknown
   linkType: soft
 
@@ -5548,13 +5548,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"stripe@npm:14.20.0":
-  version: 14.20.0
-  resolution: "stripe@npm:14.20.0"
+"stripe@npm:14.21.0":
+  version: 14.21.0
+  resolution: "stripe@npm:14.21.0"
   dependencies:
     "@types/node": "npm:>=8.1.0"
     qs: "npm:^6.11.0"
-  checksum: 10c0/44de7f650070a6e1b7fed22b2228192a8c5b10fa2468f686e005d3e316aa51d48a55d5c240e3acb5bf1d7ea4e03dec28712df52806384be49513e812c7a84e7a
+  checksum: 10c0/b35b28fc46f9306a99e8902f5dba1823516e01abd673222d7195ea3e7d1df87b5abd55062059e24c8f70bcd5e32c6993a2eda9530607129dff399302ecf6317b
   languageName: node
   linkType: hard
 
