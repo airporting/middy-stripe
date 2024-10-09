@@ -30,7 +30,7 @@
     ]
   },
   "dependencies": {
-    "stripe": "16.2.0"
+    "stripe": "17.2.0"
   },
   "devDependencies": {
     "@babel/core": "7.24.7",
